@@ -1,0 +1,39 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "name": "Jellyfish",
+      "videoSrc": "https://youtu.be/56Kl9gz0Ybg",
+      "comments": [
+        {
+          "authorName": "The first wind",
+          "text": "It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
+        },
+        {
+          "authorName": "The second wind",
+          "text": "It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti! It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
+        },
+        {
+          "authorName": "The third wind",
+          "text": "It is a funny vid"
+        }
+      ]
+    },
+
+    {
+      "id": "2",
+      "name": "Jellyfish",
+      "videoSrc": "",
+      "comments": [
+        {
+          "authorName": "The first wind",
+          "text": "It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
+        },
+        {
+          "authorName": "The second wind",
+          "text": "quod omnisdebitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
+        }        
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<div class="video-container"
+    *ngFor="let videoItem of videoItems"
+    [attr.id]="videoItem.id">
+    <h2>{{videoItem.name}}</h2>
+    
+   <video   
+        [attr.src]="videoItem.videoSrc"
+        
+
+        controls
+        width="100%">
+    </video> 
+    <h3>comments:</h3>
+    <app-comments
+        *ngFor="let comment of videoItem.comments"
+        [authorName]="comment.authorName"
+        [text]="comment.text"
+    ></app-comments>
+</div>
+
+
+
