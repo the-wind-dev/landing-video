@@ -14,13 +14,21 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
   ]
 })
 export class CommentsComponent implements OnInit {
+  // оптимально ли передаются данные, или это через Владивосток в Москву?
+  // Input?
   @Input()
   public authorName: string = ''
+
   @Input()
   public text: string = ''
+
+  @Input()
+  public authorImg: string = ''
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -11,8 +11,10 @@
         width="100%">
     </video> 
     <h3>comments:</h3>
+    
     <app-comments
         *ngFor="let comment of videoItem.comments"
+        [authorImg]="comment.authorImg"
         [authorName]="comment.authorName"
         [text]="comment.text"
     ></app-comments>

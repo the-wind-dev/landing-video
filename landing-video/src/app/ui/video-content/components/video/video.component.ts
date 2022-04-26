@@ -27,7 +27,13 @@ export class VideoComponent implements OnInit {
       // Fix me: не очень нрасиво берутся данные из DB
       for (let video of videos) {
         console.log('SRC: ',video.videoSrc)
-        video.videoSrc = `../../../../assets/videos/video_${video.id}.mp4`
+
+        
+        for (let comment of video.comments) {
+          // comment.authorImg = `../../../../assets/profile-photos/avatar_${comment.authorId}.jpg`
+          console.log(comment.authorImg)
+        }
+        console.log(video.comments) 
         this.videoItems.push(video)
       }
       console.log(this.videoItems)

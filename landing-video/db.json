@@ -3,17 +3,23 @@
     {
       "id": "1",
       "name": "Jellyfish",
-      "videoSrc": "https://youtu.be/56Kl9gz0Ybg",
+      "videoSrc": "../../../../assets/videos/video_1.mp4",
       "comments": [
         {
+          "authorId": "1",
+          "authorImg": "../../../../assets/profile-images/avatar_1.jpg",
           "authorName": "The first wind",
           "text": "It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
         },
         {
+          "authorId": "2",
+          "authorImg": "",
           "authorName": "The second wind",
           "text": "It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti! It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
         },
         {
+          "authorId": "3",
+          "authorImg": "",
           "authorName": "The third wind",
           "text": "It is a funny vid"
         }
@@ -22,14 +28,18 @@
 
     {
       "id": "2",
-      "name": "Jellyfish",
-      "videoSrc": "",
+      "name": "Daffodils",
+      "videoSrc": "../../../../assets/videos/video_2.mp4",
       "comments": [
         {
+          "authorId": "1",
+          "authorImg": "",
           "authorName": "The first wind",
           "text": "It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
         },
         {
+          "authorId": "2",
+          "authorImg": "",
           "authorName": "The second wind",
           "text": "quod omnisdebitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
         }        
