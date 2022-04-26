@@ -15,6 +15,7 @@
         [authorImg]="comment.authorImg"
         [authorName]="comment.authorName"
         [text]="comment.text"
+        id="comments{{videoItem.id}}"
     ></app-comments>
     <app-make-comment
         (leaveComment)="newComment(videoItem.id, $event)"

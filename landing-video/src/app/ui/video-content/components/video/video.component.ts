@@ -40,25 +40,37 @@ export class VideoComponent implements OnInit {
       }      
     })
   }
+
+  public renderLastComment(videoId: string, newComment: myComment): void {
+    const currentComments = document.getElementById(`comments${videoId}`)
+    // console.log(currentComments)
+    const newCom: HTMLElement = document.createElement('app-comments')
+    
+  }
+
   public newComment(videoId: string, event: Event) {
+    const eventText: string = event.toString()
     const newCom: myComment = {
       authorId: "1",
       authorImg: "../../../../assets/profile-images/avatar_1.jpg",
       authorName: "The first wind",
-      text: "mm deleniti!"
+      text: eventText
     }
     this.videoService.read(videoId)
     .then( (res) => {
       console.log(res.comments)
       res.comments.push(newCom)
       console.log(res.comments)
+      // FIX ME videoId:string, need num
+      this.videoService.update(+videoId, res)
       return res
     })
-    .then( (res) => {
-      this.videoService.update(+videoId, res)
-    })
-
-    // .then( (res) => {console.log(res)} )
+    .then( () => {
+      this.renderLastComment(videoId, newCom)
+    }
+    )
+    .catch( (error) => {console.error(error)})
+    
     
   }
 

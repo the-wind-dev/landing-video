@@ -28,6 +28,24 @@
           "authorImg": "../../../../assets/profile-images/avatar_1.jpg",
           "authorName": "The first wind",
           "text": "mm deleniti!"
+        },
+        {
+          "authorId": "1",
+          "authorImg": "../../../../assets/profile-images/avatar_1.jpg",
+          "authorName": "The first wind",
+          "text": "its a commenT!!!!"
+        },
+        {
+          "authorId": "1",
+          "authorImg": "../../../../assets/profile-images/avatar_1.jpg",
+          "authorName": "The first wind",
+          "text": "sdf"
+        },
+        {
+          "authorId": "1",
+          "authorImg": "../../../../assets/profile-images/avatar_1.jpg",
+          "authorName": "The first wind",
+          "text": "jkp"
         }
       ]
     },
@@ -47,6 +65,12 @@
           "authorImg": "",
           "authorName": "The second wind",
           "text": "quod omnisdebitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
+        },
+        {
+          "authorId": "1",
+          "authorImg": "../../../../assets/profile-images/avatar_1.jpg",
+          "authorName": "The first wind",
+          "text": "mm deleniti!"
         }
       ]
     }
