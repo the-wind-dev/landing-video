@@ -14,9 +14,15 @@ export class VideoService {
                 @Inject(API_SERVER_PATH) private apiServerPath: string) {
     }
 
-    
-    public readAll(): Promise<readonly Video[]> {
-        
+    public read(id: number): Promise<Video> {  
+        return firstValueFrom(this.httpClient.get<Video>(`${this.apiServerPath}/videos/${id}`))
+    }
+
+    public readAll(): Promise<readonly Video[]> {  
         return firstValueFrom(this.httpClient.get<readonly Video[]>(`${this.apiServerPath}/videos`))
+    }
+
+    public update(id:number, video: Video): Promise<Video> {
+        return firstValueFrom(this.httpClient.put<Video>(`${this.apiServerPath}/videos/${id}`, video))
     }
 }

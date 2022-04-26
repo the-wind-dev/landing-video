@@ -1,0 +1,11 @@
+<p>make a comment!</p>
+<textarea class="make-comment" 
+          id="make-comment_1"
+          (focus)="onTouch()"
+
+          [ngModel]="editorValue"
+          (ngModelChange)="onChangeEditorValue($event)"
+></textarea>
+<button class="button send-button"
+        (click)="onClickSendButton()"
+        >send</button>

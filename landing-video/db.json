@@ -13,19 +13,18 @@
         },
         {
           "authorId": "2",
-          "authorImg": "",
+          "authorImg": "../../../../assets/profile-images/avatar_2.jpg",
           "authorName": "The second wind",
           "text": "It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti! It is a funny video 2222 lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni minima, nihil a quam provident quod omnis consectetur ex vel debitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
         },
         {
           "authorId": "3",
-          "authorImg": "",
+          "authorImg": "../../../../assets/profile-images/avatar_3.jpg",
           "authorName": "The third wind",
           "text": "It is a funny vid"
         }
       ]
     },
-
     {
       "id": "2",
       "name": "Daffodils",
@@ -42,7 +41,7 @@
           "authorImg": "",
           "authorName": "The second wind",
           "text": "quod omnisdebitis vitae consequatur perspiciatis cum voluptatem laboriosam possimus nam deleniti!"
-        }        
+        }
       ]
     }
   ]

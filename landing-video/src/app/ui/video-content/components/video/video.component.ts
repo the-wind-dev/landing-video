@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Video } from 'src/app/domain/video';
 import { VideoService } from 'src/app/ui/shared/api/video.service';
 
@@ -12,7 +12,10 @@ export class VideoComponent implements OnInit {
 
   public videoId: string = '1'
   public videoSrcs: string[] = []
-  public videoItems: Video[] = [];
+  public videoItems: Video[] = []
+
+  @Input()
+  public newCommentText: string = ''
   
   constructor(public videoService: VideoService) { }
 
@@ -24,22 +27,36 @@ export class VideoComponent implements OnInit {
   public uploadVideo(): void {
     
     this.videoService.readAll().then( (videos: readonly Video[]) => {
+
       // Fix me: не очень нрасиво берутся данные из DB
-      for (let video of videos) {
-        console.log('SRC: ',video.videoSrc)
-
-        
+      for (let video of videos) {   
         for (let comment of video.comments) {
-          // comment.authorImg = `../../../../assets/profile-photos/avatar_${comment.authorId}.jpg`
-          console.log(comment.authorImg)
+          if (comment.authorImg == '') {
+            comment.authorImg=`../../../../assets/profile-images/avatar_default.jpg`
+          }  
         }
-        console.log(video.comments) 
         this.videoItems.push(video)
-      }
-      console.log(this.videoItems)
-
-      
+      }      
     })
+  }
+  public newComment(videoId: string, event: Event) {
+    const videoIdNum: number = +videoId 
+    console.log(videoId, event)
+    const eventText: string = event.toString()
+    
+    this.videoService.read(videoIdNum)
+                     .then( (res) => {const videoItem: Video})
+    console.log(videoItem)
+                    //  (res) => {
+                    //   res.comments.push({
+                    //     authorId: '4',
+                    //     authorImg: '',
+                    //     authorName: '4author',
+                    //     text: eventText,
+                    //   })
+                    //   console.log(res)
+                    //  }
+    
   }
 
 
