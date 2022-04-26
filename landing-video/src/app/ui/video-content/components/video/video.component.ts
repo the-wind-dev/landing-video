@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Video } from 'src/app/domain/video';
+import { myComment } from 'src/app/domain/myComment';
 import { VideoService } from 'src/app/ui/shared/api/video.service';
 
 
@@ -40,22 +41,24 @@ export class VideoComponent implements OnInit {
     })
   }
   public newComment(videoId: string, event: Event) {
-    const videoIdNum: number = +videoId 
-    console.log(videoId, event)
-    const eventText: string = event.toString()
-    
-    this.videoService.read(videoIdNum)
-                     .then( (res) => {const videoItem: Video})
-    console.log(videoItem)
-                    //  (res) => {
-                    //   res.comments.push({
-                    //     authorId: '4',
-                    //     authorImg: '',
-                    //     authorName: '4author',
-                    //     text: eventText,
-                    //   })
-                    //   console.log(res)
-                    //  }
+    const newCom: myComment = {
+      authorId: "1",
+      authorImg: "../../../../assets/profile-images/avatar_1.jpg",
+      authorName: "The first wind",
+      text: "mm deleniti!"
+    }
+    this.videoService.read(videoId)
+    .then( (res) => {
+      console.log(res.comments)
+      res.comments.push(newCom)
+      console.log(res.comments)
+      return res
+    })
+    .then( (res) => {
+      this.videoService.update(+videoId, res)
+    })
+
+    // .then( (res) => {console.log(res)} )
     
   }
 

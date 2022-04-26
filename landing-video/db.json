@@ -22,6 +22,12 @@
           "authorImg": "../../../../assets/profile-images/avatar_3.jpg",
           "authorName": "The third wind",
           "text": "It is a funny vid"
+        },
+        {
+          "authorId": "1",
+          "authorImg": "../../../../assets/profile-images/avatar_1.jpg",
+          "authorName": "The first wind",
+          "text": "mm deleniti!"
         }
       ]
     },

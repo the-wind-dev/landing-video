@@ -1,8 +1,8 @@
-import { Comment } from "./comment"; 
+import { myComment } from "./myComment"; 
 export interface Video {
     id: string,
     name: string,
     videoSrc: string,
     description?: string,
-    comments: Comment[],
+    comments: myComment[],
 }

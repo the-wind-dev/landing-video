@@ -1,4 +1,4 @@
-export interface Comment{
+export interface myComment{
     authorId: string
     authorImg: string
     authorName: string

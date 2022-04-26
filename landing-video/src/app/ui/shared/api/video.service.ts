@@ -4,6 +4,7 @@ import { Video } from "src/app/domain/video";
 import { API_SERVER_PATH } from "../tokens";
 import { HttpClient } from "@angular/common/http"
 import { firstValueFrom } from "rxjs";
+import { myComment } from "src/app/domain/myComment";
 
 @Injectable({
     providedIn: "root"
@@ -14,7 +15,7 @@ export class VideoService {
                 @Inject(API_SERVER_PATH) private apiServerPath: string) {
     }
 
-    public read(id: number): Promise<Video> {  
+    public read(id: string): Promise<Video> {  
         return firstValueFrom(this.httpClient.get<Video>(`${this.apiServerPath}/videos/${id}`))
     }
 
@@ -25,4 +26,6 @@ export class VideoService {
     public update(id:number, video: Video): Promise<Video> {
         return firstValueFrom(this.httpClient.put<Video>(`${this.apiServerPath}/videos/${id}`, video))
     }
+
+    
 }
